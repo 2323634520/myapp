@@ -1,5 +1,13 @@
 <template>
     <div>
+        <div class="breadcrumb-main">
+          <el-breadcrumb separator-class="el-icon-arrow-right">
+            <el-breadcrumb-item :to="{ path: '/' }">首页介绍</el-breadcrumb-item>
+            <el-breadcrumb-item>用户管理</el-breadcrumb-item>
+            <el-breadcrumb-item>知识笔记</el-breadcrumb-item>
+            <el-breadcrumb-item>其他内容</el-breadcrumb-item>
+          </el-breadcrumb>
+        </div>
         <div class="query-main">
             <div class="query-main-search">
                 <div class="query-main-search-input">
@@ -18,7 +26,7 @@
             </div>
         </div>
         <div class="table-main">
-          <el-table :data="tableData" height="700" style="width: 100%">
+          <el-table :data="tableData" height="700" style="width: 100%" border>
               <el-table-column fixed prop="Name" label="姓名"></el-table-column>
               <el-table-column  prop="Gender" label="性别"></el-table-column>
               <el-table-column  prop="Phone" label="电话"></el-table-column>
@@ -104,9 +112,15 @@ export default {
 </script>
 
 <style scoped lang="less">
+.breadcrumb-main{
+
+}
 .query-main{
   display: flex;
   justify-content: space-between;
+  padding:20px 10px 20px;
+  background: #fff;
+  margin-bottom: 5px;
   .query-main-search{
     display: flex;
     justify-content: space-between;
@@ -120,5 +134,7 @@ export default {
 }
 .table-main{
   height: 100%;
+  padding: 10px;
+  background: #fff;
 }
 </style>

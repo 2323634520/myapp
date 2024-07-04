@@ -1,60 +1,61 @@
 <template>
-    <div class="header-container">
-      <div class="l-content">
-        <span class="icon">
-          <i class="el-icon-pear"></i>
-        </span>
-        <span class="text">大冻梨123</span>
-      </div>
-      <div class="r-content">
-        <el-dropdown>
-          <span class="el-dropdown-link">
-            <img class="user-head" src="https://img1.baidu.com/it/u=4288672918,3634316930&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1693414800&t=6b1c863086ac70b499a052878e6ddf41" alt="">
-          </span>
-          <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item disabled>个人中心</el-dropdown-item>
-            <el-dropdown-item divided>退出</el-dropdown-item>
-          </el-dropdown-menu>
-        </el-dropdown>
-      </div>
+  <div class="header-main" :class="{'header-main-bg':changeColor}">
+    <div class="header-main-left">
+      <i class="el-icon-pear header-main-left-icon"></i>
+      <span class="header-main-left-name">大冻梨</span>
     </div>
-  </template>
-  
-  <style lang="less" scoped>
-  .header-container {
-    background-color: #fff;
-    height: 60px;
+    <div class="header-main-right" >
+      <div class="header-main-right-change" @click="changeColor = !changeColor"></div>
+      <img class="header-main-right-img" src="https://img1.baidu.com/it/u=4288672918,3634316930&fm=253&app=120&size=w931&n=0&f=JPEG&fmt=auto?sec=1693414800&t=6b1c863086ac70b499a052878e6ddf41" alt="">
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      changeColor:false,
+    };
+  },
+  methods:{
+    handleClickChange(){
+    }
+  }
+};
+</script>
+<style lang="less" scoped>
+.header-main{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background: linear-gradient(to right, #cd77c6 0% ,#3e247a 70% ,#653b94 100% );
+  .header-main-left{
+      color: #fff;
+      font-size: 30px;
+      font-weight: 600;
+      .header-main-left-name{
+        
+      }
+  }
+  .header-main-right{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    .header-main-right-change{
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border-radius: 50%;
+    }
+    .header-main-right-img{
+      width: 40px;
+      border-radius: 50%;
+    }
   }
-  
-  .header-container .text {
-    color: #00aeec;
-    font-size: 24px;
-    font-weight: 600;
-  }
-  
-  .header-container .icon {
-    color: #00aeec;
-    font-size: 24px;
-    margin-left: 24px;
-    margin-right: 8px;
-  }
-  
-  .header-container .r-content .user-head {
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-  }
-  </style>
-  
-  <script>
-  export default {
-    data() {
-      return {};
-    },
-  };
-  </script>
-  
+}
+.header-main-bg{
+  background: linear-gradient(to right, #00b0a6 0% ,#00619d 70% ,#00619d 100% );
+}
+</style>
