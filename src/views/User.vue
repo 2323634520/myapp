@@ -67,6 +67,15 @@ export default {
           CreatedTime: '2024.04.04 14:14:13',
           LastModifiedBy: '王瀚章1',
         },
+        {
+          Name: '1',
+          Gender: '女',
+          Phone: '110',
+          Address: '青岛',
+          CreatedBy: '王瀚章1',
+          CreatedTime: '2024.04.04 14:14:13',
+          LastModifiedBy: '王瀚章1',
+        },
       ], //表格数据
     };
   },
