@@ -1,8 +1,10 @@
 <template>
     <div class="header-container">
       <div class="l-content">
-        <span class="icon"><i class="el-icon-pear"></i></span>
-        <span class="text">大冻梨</span>
+        <span class="icon">
+          <i class="el-icon-pear"></i>
+        </span>
+        <span class="text">大冻梨123</span>
       </div>
       <div class="r-content">
         <el-dropdown>
