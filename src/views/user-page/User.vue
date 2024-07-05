@@ -107,7 +107,7 @@ export default {
       this.getAllUsersList()
     },
     //请求接口
-    async getAllUsersList(){
+    getAllUsersList(){
       axios({
         url:  "http://81.70.155.74:8083/User/GetAllUsersList",
         method: "post",
