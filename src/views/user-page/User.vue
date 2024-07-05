@@ -25,7 +25,7 @@
         <div class="table-main">
           <el-table :data="tableData" height="700" style="width: 100%" border highlight-current-row @current-change="handleGetRowData">
               <el-table-column  fixed type="index" label="序号" width="50" align="center"></el-table-column>
-              <el-table-column  fixed prop="Name" label="姓名"></el-table-column>
+              <el-table-column  prop="Name" label="姓名"></el-table-column>
               <el-table-column  prop="Gender" label="性别"></el-table-column>
               <el-table-column  prop="Phone" label="电话"></el-table-column>
               <el-table-column  prop="Address" label="地址"></el-table-column>
