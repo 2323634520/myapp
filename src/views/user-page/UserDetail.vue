@@ -19,6 +19,9 @@
       <!-- 用户详情表单 -->
       <div class="form-main" v-loading="loading" element-loading-text="数据加载中..." element-loading-background="rgba(0, 0, 0, 0.7)">
         <el-form label-position="top" :model="form" :label-width="labelWidth" :disabled="true">
+          <el-form-item label="编号">
+            <el-input v-model="form.Code"></el-input>
+          </el-form-item>
           <el-form-item label="姓名">
             <el-input v-model="form.Name"></el-input>
           </el-form-item>
