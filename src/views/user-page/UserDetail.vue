@@ -13,26 +13,26 @@
         </div>
         <div class="form-main">
             <el-form label-position="top">
-                <el-form-item label="活动名称">
+                <el-form-item label="姓名">
                     <el-input v-model="form.Name" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name" disabled></el-input>
+                <el-form-item label="性别">
+                    <el-input v-model="form.Gender" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name" disabled></el-input>
+                <el-form-item label="电话">
+                    <el-input v-model="form.Phone" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name" disabled></el-input>
+                <el-form-item label="地址">
+                    <el-input v-model="form.Address" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name" disabled></el-input>
+                <el-form-item label="创建人">
+                    <el-input v-model="form.CreatedBy" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name" disabled></el-input>
+                <el-form-item label="创建时间">
+                    <el-input v-model="form.CreatedTime" disabled></el-input>
                 </el-form-item>
-                <el-form-item label="活动名称">
-                    <el-input v-model="form.name" disabled></el-input>
+                <el-form-item label="最后修改人">
+                    <el-input v-model="form.LastModifiedBy" disabled></el-input>
                 </el-form-item>
             </el-form>
         </div>

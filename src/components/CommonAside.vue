@@ -36,19 +36,19 @@
   </template>
   
   <style lang="less" scoped>
-  .menu-wrapper {
-    height: 100%;
-    overflow: hidden;
-  }
+  // .menu-wrapper {
+  //   height: 100%;
+  //   overflow: hidden;
+  // }
   
-  .el-menu-vertical-demo:not(.el-menu--collapse) {
-    width: 200px;
-    height: 100%;
-  }
+  // .el-menu-vertical-demo:not(.el-menu--collapse) {
+  //   width: 200px;
+  //   height: 100%;
+  // }
   
-  .el-menu {
-    height: 100%;
-  }
+  // .el-menu {
+  //   height: 100%;
+  // }
   </style>
   
   <script>
@@ -83,14 +83,14 @@
             icon:"location",
             children:[
               {
-                path: '/page1',
+                path: '/other-page1',
                 name: 'page1',
                 label: 'A界面',
                 icon: 'setting',
                 url: 'Other/PageOne'
               },
               {
-                path: '/page2',
+                path: '/other-page2',
                 name: 'page2',
                 label: 'B界面',
                 icon: 'setting',

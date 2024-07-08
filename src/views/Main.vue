@@ -46,6 +46,7 @@ export default {
   padding: 10px;
 }
 .main >>>.el-container{
-  height: 100%;
+  height: 100vh;
+  overflow-y: hidden;
 }
 </style>

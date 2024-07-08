@@ -18,7 +18,6 @@ html,body{
 </style>
 
 <script>
-import { RouterView } from 'vue-router';
 import router from './router';
 
 
