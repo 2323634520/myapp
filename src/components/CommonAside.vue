@@ -58,7 +58,7 @@
         isCollapse: false,
         menuData: [
           {
-            path: '/',
+            path: '/home',
             name: 'home',
             label: '首页介绍',
             icon: 's-home',

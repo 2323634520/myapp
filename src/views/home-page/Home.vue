@@ -1,5 +1,5 @@
 <template>
-    <h1>我是Home</h1>
+    <h1>123</h1>
 </template>
 
 <script>
