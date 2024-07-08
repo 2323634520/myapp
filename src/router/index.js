@@ -44,10 +44,24 @@ const routes = [
             },
         ]
     },
+    {
+        path:'/login',
+        name:'login',
+        component:() => import('../views/login/Login.vue'),
+    }
 ]
 
 const router = new VueRouter({
     routes
 })
 
+router.beforeEach((to, from, next) => {
+//    console.log('to',to)
+//    if(to.name == 'index' && a == 1){
+//     console.log('1')
+//         next('/login')
+//    }else{
+        next()
+//    }
+});
 export default router
