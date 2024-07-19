@@ -3,6 +3,7 @@
     <div class="header-main-left">
       <i class="el-icon-pear header-main-left-icon"></i>
       <span class="header-main-left-name">大冻梨</span>
+      <span class="text-color">123</span>
     </div>
     <div class="header-main-right" >
       <div class="header-main-right-change" @click="changeColor = !changeColor"></div>
@@ -24,7 +25,9 @@ export default {
   }
 };
 </script>
+
 <style lang="less" scoped>
+@import "@/common/common.css";
 .header-main{
   height: 100%;
   display: flex;
